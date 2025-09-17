@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в реальном времени</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weather.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <span>WeatherLive</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Главная</a>
+                <a href="#" class="nav-link">Прогноз</a>
+                <a href="#" class="nav-link">Карта</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="animated-title">
+                        <span class="title-text">Погода в реальном времени</span>
+                    </h1>
+                    <p class="hero-subtitle">Актуальные метеоданные для вашего города</p>
+                </div>
+                <div class="weather-icon">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                </div>
+            </section>
+
+            <section class="weather-widget">
+                <div class="widget-container">
+                    <div id="e1ab4f8d5f9cee165232558534d1396c" class="ww-informers-box-854753">
+                        <p class="ww-informers-box-854754">
+                            <a href="https://world-weather.ru/pogoda/russia/bratsk/">Точный прогноз погоды в Братске</a><br>
+                            <a href="https://world-weather.ru/pogoda/russia/moscow/">Прогноз погоды в Москве</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="additional-info">
+                <div class="info-cards">
+                    <div class="card">
+                        <i class="fas fa-temperature-high"></i>
+                        <h3>Температура</h3>
+                        <p>Текущие показатели</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-wind"></i>
+                        <h3>Ветер</h3>
+                        <p>Скорость и направление</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-tint"></i>
+                        <h3>Влажность</h3>
+                        <p>Уровень влажности</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 WeatherLive. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=e1ab4f8d5f9cee165232558534d1396c"></script>
+</body>
+</html>
